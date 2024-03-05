@@ -9,6 +9,11 @@ pipeline {
         }
     }
 
+    environment {
+        NODE_ENV = 'dev'
+    }
+
+
     stages {
         stage('Build') {
             steps {
